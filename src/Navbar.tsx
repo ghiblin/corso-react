@@ -32,8 +32,19 @@ const Navbar = () => {
         }}
       >
         {links.map((link) => (
-          <li key={link.path}>
-            <Link to={link.path}>{link.label}</Link>
+          <li
+            key={link.path}
+            style={{
+              padding: "0.5rem 1rem",
+              backgroundColor: "tomato",
+              color: "white",
+              borderRadius: "4px",
+              marginLeft: "0.5rem",
+            }}
+          >
+            <Link to={link.path} style={{ textDecoration: "none" }}>
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>
