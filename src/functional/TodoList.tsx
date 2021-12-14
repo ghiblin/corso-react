@@ -57,6 +57,7 @@ const TodoList = () => {
         padding: "2rem",
       }}
     >
+      <h3>Functional version</h3>
       <TodoForm
         addTodo={addTodo}
         toggleList={toggleList}

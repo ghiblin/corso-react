@@ -51,6 +51,7 @@ class TodoList extends React.Component<TodoListProps, TodoListState> {
           padding: "2rem",
         }}
       >
+        <h3>Component version</h3>
         <TodoForm
           addTodo={this.addTodo}
           toggleList={this.toggleList}
