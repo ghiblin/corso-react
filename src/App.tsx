@@ -1,10 +1,12 @@
-import React from "react";
-import TodoList from "./components/TodoList";
+import ComponentTodoList from "./components/TodoList";
+import FunctionalTodoList from "./functional/TodoList";
 
 function App() {
   return (
     <>
-      <TodoList />
+      <ComponentTodoList />
+      <hr />
+      <FunctionalTodoList />
     </>
   );
 }

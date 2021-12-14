@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 } from "uuid";
-import { Todo } from "./TodoList";
+import { Todo } from "../todo";
 
 interface ReactFormProps {
   addTodo: (todo: Todo) => void;
@@ -36,6 +36,7 @@ class TodoForm extends React.Component<ReactFormProps, ReactFormState> {
 
   handleAddTodo = () => {
     const { name } = this.state;
+    if (!name) return;
     const todo: Todo = {
       id: v4(),
       name,

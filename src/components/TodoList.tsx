@@ -1,11 +1,7 @@
 import React from "react";
+import { Todo } from "../todo";
 import TodoForm from "./TodoForm";
 import TodoListItem from "./TodoListItem";
-
-export interface Todo {
-  id: string;
-  name: string;
-}
 
 interface TodoListProps {}
 interface TodoListState {
